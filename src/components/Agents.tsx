@@ -50,7 +50,7 @@ const Agents = ({
             >
                 {agentsSlides.map((agentsChunk, index) => (
                     <SwiperSlide key={index}>
-                        <div className="grid-slider grid grid-cols-3 gap-4">
+                        <div className="grid-slider  grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                             {agentsChunk.map((agent) => (
                                 <div
                                     key={agent.id}
@@ -88,14 +88,14 @@ const Agents = ({
                                         </div>
 
                                         <div className="flex flex-col self-end gap-2 text-[#333333] text-[12px]">
-                                            <p className='text-lg 2xl:text-[20px]'>طرق التواصل مع الوكيل</p>
+                                            <p className='text-[12px] 2xl:text-[20px]'>طرق التواصل مع الوكيل</p>
                                             <div className="flex flex-row-reverse justify-center gap-1">
                                                 <FiPhone className="text-[14px] 2xl:text-[20px] self-center" />
-                                                <p className='text-lg 2xl:text-[20px]'>{agent.phone}</p>
+                                                <p className='text-[12px] 2xl:text-[20px]'>{agent.phone}</p>
                                             </div>
                                             <div className="flex flex-row-reverse justify-center gap-1">
                                                 <PiHandbag className="text-[14px] 2xl:text-[20px] self-center" />
-                                                <p className='text-lg 2xl:text-[20px]'>{agent.secondPhone}</p>
+                                                <p className='text-[12px] 2xl:text-[20px]'>{agent.secondPhone}</p>
                                             </div>
                                         </div>
                                     </div>

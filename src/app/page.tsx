@@ -16,13 +16,14 @@ import { projectUnits } from "../data/newProjects";
 import { news } from "../data/news";
 
 import { CiSearch } from "react-icons/ci";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaLongArrowAltRight } from "react-icons/fa";
+
+
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import SwiperCore from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './globals.css';
+import ReelsSlider from "@/components/ReelsSlider";
 
 // import required modules
 
@@ -78,10 +79,10 @@ export default function HomePage() {
           </div>
         </section>
         {/* About Section */}
-        <section className="my-12 mx-4 md:mx-25 bg-white">
+        <section className="my-12 mx-4 md:mx-10 lg:mx-25 bg-white">
           <div className="mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl  2xl:text-[36px] md:font-[600] text-[#333333] mb-4"> تعرف علينا</h2>
-            <p className="text-center text-sm  md:text-lg  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4">
+            <h2 className="text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4"> تعرف علينا</h2>
+            <p className="text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4">
               تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء” منذ أکثر من خمسة عشر عامًا، ومنذ ذلك الوقت نسعی لإنشاء العدید من المشاریع ذات الجودة والکفاءة العالیة من خلال فریق هندسي وفني وإداري متکامل مع مراعاة تطبیق معاییر الجودة والصحة والسلامة المهنیة طوال فترة المشروع, ودائمًا تسعی الشرکة لتقدیم مشاریع إنشائیة متمیزة لعملائها.            </p>
             <div className="flex justify-center">
               <button className=" rounded-4xl p-3 border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> تعرف علينا اكثر</button>
@@ -117,12 +118,12 @@ export default function HomePage() {
         </section>
 
         {/* Projects Section */}
-        <section className=" mx-4 md:mx-25 bg-white">
+        <section className=" mx-4 sm:mx-8 md:mx-10 lg:mx-25 bg-white">
 
           <div className="flex flex-col sm:flex-row-reverse w-full justify-end items-center py-4 bg-white">
             <div className="flex flex-col items-center text-center w-full ">
-              <h2 className="mx-auto text-xl sm:text-2xl md:text-3xl  2xl:text-[36px] md:font-[600] text-[#333333]">استكشف مناطقنا</h2>
-              <p className="text-center text-sm  md:text-lg  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4">
+              <h2 className="mx-auto text-xl sm:text-2xl md:text-2xl xl:text-[30px]  2xl:text-[36px] md:font-[600] text-[#333333]">استكشف مناطقنا</h2>
+              <p className="text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4">
                 تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
               </p>
             </div>
@@ -148,145 +149,19 @@ export default function HomePage() {
 
 
           {/* slider */}
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={5}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              640: { slidesPerView: 5, spaceBetween: 20 },
-              768: { slidesPerView: 5, spaceBetween: 20 },
-              1024: { slidesPerView: 5, spaceBetween: 20 },
-            }}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-
-            className="mySwiper px-18"
-          >
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px]  bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                <Image src="/elfayoum.png" alt="الفيوم" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px] ">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                <Image src="/newCairo.png" alt="القاهرة الجديدة" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                <Image src="/elsadat.png" alt="السادات" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  bg-white  top-1 sm:right-1  z-10"> +22 مشروع</div>
-                <Image src="/elfayoum2.png" alt="الفيوم الجديدة" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                <Image src="/newSohag.png" alt="سوهاج الجديدة" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative img-cont w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                <Image src="/elsadat.png" alt="السادات" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative w-full h-32 sm:h-48 md:h-48 lg:h-74 2xl:h-150 rounded-lg overflow-hidden">
-                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px]  2xl:text-[20px] bg-white  top-1 sm:right-1 z-10"> +22 مشروع</div>
-                <Image src="/newCairo.png" alt="القاهرة الجديدة" fill className="object-cover" />
-              </div>
-              <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">سوهاج الجديدة</p>
-                  <p className="text-[6px] md:text-[12px] 2xl:text-[18px]">12 نوفمبر 2024</p>
-                </div>
-                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4  md:h-8 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                  <FaLongArrowAltRight className="text-[8px] sm:text-[10px] md:text-[12px] 2xl:text-[28px]" />
-                </button>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          <ReelsSlider />
         </section>
         {/* New Projects Section */}
-        <section className="my-12 mx-4 md:mx-25 bg-white">
+        <section className="my-12 mx-4 sm:mx-8 md:mx-10 lg:mx-25 bg-white">
           <div className='flex flex-col items-end text-start bg-white rounded-lg'>
-            <h2 className='text-xl sm:text-2xl md:text-3xl 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>احدث مشاريع معمار</h2>
-            <p className='text-center text-sm  md:text-lg  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4'>
+            <h2 className='text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>احدث مشاريع معمار</h2>
+            <p className='text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4'>
               تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
             </p>
           </div>
           <NewProject unitsPerSlide={6} units={projectUnits} />
+          <CustomerOpinions />
         </section>
-        <CustomerOpinions />
         {/* Customer Opinions Section */}
         { /* job Section */}
         <section className="w-full my-8  ">
@@ -311,14 +186,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="my-12 mx-4 md:mx-25 md:my-25">
+        <section className="my-12 mx-4 md:mx-10 lg:mx-25 md:my-25">
 
           <Agents agents={agents} unitsPerSlide={3} />
         </section>
-        <section className="my-12 mx-4 md:mx-25 md:my-25 bg-[#F9F9F9] m-4 rounded-2xl ">
+        <section className="my-12 mx-4 sm:mx-8 md:mx-10 lg:mx-25 md:my-25 bg-[#F9F9F9] m-4 rounded-2xl ">
           <div className='flex flex-col  items-baseline justify-between   '>
             <div className='flex flex-col w-full items-end text-start  bg-white rounded-lg '>
-              <h2 className=' text-xl sm:text-2xl md:text-3xl 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>  أخبار و فعليات</h2>
+              <h2 className=' text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>  أخبار و فعليات</h2>
               <p className='text-gray-600 mb-6 text-end text-[12px] 2xl:text-[20px] sm:text-md'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
 
             </div>

@@ -11,14 +11,14 @@ import SwiperCore from "swiper";
 const CustomerOpinions = () => {
     const swiperRef = useRef<SwiperCore | null>(null);
     return (
-        <div className='flex flex-col items-center justify-center w-full h-full bg-[#EBEAF466] mt-25 px-4 md:px-25 py-2 '>
+        <div className='flex flex-col items-center justify-center w-full h-full bg-[#EBEAF466] mt-25  py-2 '>
             <div className='flex flex-row-reverse justify-between items-center w-full mb-8'>
                 <div className='flex-col gap-1'>
-                    <h2 className='text-xl sm:text-2xl md:text-3xl 2xl:text-[36px] md:font-[600] text-[#333333] mb-4 font-bold text-right'>آراء العملاء</h2>
-                    <p className=' text-sm  md:text-lg  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4 text-right'>  تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء </p>
+                    <h2 className='text-xl sm:text-2xl md:text-2xl 2xl:text-[36px] md:font-[600] text-[#333333] mb-4 font-bold text-right'>آراء العملاء</h2>
+                    <p className=' text-sm  md:text-[14px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4 text-right'>  تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء </p>
 
                 </div>
-                <button className='rounded-3xl border-1 border-[#E37C35] text-[#E37C35]  text-[8px] w-1/3 sm:text-[12px]  md:w-1/6 py-2 px-3 2xl:text-[22px] hover:text-white hover:bg-[#E37C35] transition-all duration-300'> عرض المزيد</button>
+                <button className='rounded-3xl border-1 border-[#E37C35] text-[#E37C35]  text-[8px] w-1/3 sm:text-[12px]  md:w-2/6 lg:w-1/6 py-2 px-3 2xl:text-[22px] hover:text-white hover:bg-[#E37C35] transition-all duration-300'> عرض المزيد</button>
             </div>
             <Swiper
                 slidesPerView={3}

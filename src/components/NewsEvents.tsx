@@ -49,18 +49,18 @@ const NewsEvents = ({
                 className="mySwiper">
                 {unitSlides.map((unitChunk, index) => (
                     <SwiperSlide key={index}>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4  ">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  ">
                             {unitChunk.map((unit) => (
                                 <div key={unit.id} className='flex flex-col gap-1'>
-                                    <div className="relative w-full h-48 md:h-78 2xl:h-120 rounded-xl overflow-hidden ">
+                                    <div className="relative w-full h-58 md:h-78 2xl:h-120 rounded-xl overflow-hidden ">
                                         <Image src={unit.img} alt="مشروع" fill className="object-cover" />
                                         <div className="absolute rounded-2xl  inset-0 bg-black/40  h-full  z-10 flex flex-col justify-end p-3 text-white">
                                             <div className="flex flex-row-reverse justify-between text-[9px] sm:text-[12px] md:text-[14px] font-semibold">
-                                                <p className='text-lg 2xl:text-[22px]' >{unit.name}</p>
+                                                <p className='text-[12px] sm:text-[14px] md:text-[16px] 2xl:text-[22px]' >{unit.name}</p>
                                             </div>
                                             <div className="flex  items-center rounded-2xl  border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs">
 
-                                                <p className='text-lg 2xl:text-[22px]'>{unit.date}</p>
+                                                <p className='text-[10px] sm:text-[12px] md:text-[14px] 2xl:text-[22px]'>{unit.date}</p>
                                                 <CiCalendarDate className="text-white text-sm 2xl:text-[22px]" />
                                             </div>
                                             <button className='w-full flex justify-center gap-1 items-center  rounded-2xl py-3 mx-auto bg-white text-[#E37C35]  hover:bg-[#E37C35] hover:text-white transition duration-200 mt-2'
