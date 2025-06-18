@@ -82,35 +82,36 @@ export default function HomePage() {
         <section className="my-12 mx-4 md:mx-10 lg:mx-25 bg-white">
           <div className="mx-auto text-center">
             <h2 className="text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4"> تعرف علينا</h2>
-            <p className="text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4">
+            <p className="text-center text-sm  md:text-[18px]  2xl:text-[22px] font-[400] text-[#626262] mb-8 px-4">
               تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء” منذ أکثر من خمسة عشر عامًا، ومنذ ذلك الوقت نسعی لإنشاء العدید من المشاریع ذات الجودة والکفاءة العالیة من خلال فریق هندسي وفني وإداري متکامل مع مراعاة تطبیق معاییر الجودة والصحة والسلامة المهنیة طوال فترة المشروع, ودائمًا تسعی الشرکة لتقدیم مشاریع إنشائیة متمیزة لعملائها.            </p>
             <div className="flex justify-center">
-              <button className=" rounded-4xl p-3 border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> تعرف علينا اكثر</button>
+              <button className=" rounded-4xl px-4 py-2 md:px-10 md:py-3 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> تعرف علينا اكثر</button>
             </div>
           </div>
-          <div className="flex flex-col-reverse md:flex-row px-0 gap-2 mt-6 ">
-            <div className="w-full h-64 md:h-96 2xl:h-150 rounded-lg overflow-hidden">
+          <div className="flex flex-col-reverse md:flex-row px-0 gap-5 mt-6 ">
+            <div className="w-full aspect-[800/450] sm:aspect-[1050/450] rounded-3xl overflow-hidden">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/ZgxsmWBfkUw"
                 title="YouTube video player"
-
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
+
+
             <div className="flex flex-row md:flex-col gap-2 justify-center">
-              <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2 w-[100px] aspect-square rounded-full border border-[#333333] text-center `}>
-                <p className="font-semibold md:font-bold">+30</p>
-                <p className="font-light">مشروع تجاري</p>
+              <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2 w-[100px] md:w-[120px]  lg:w-[140px] 2xl:w-[230px] aspect-square rounded-full border border-[#333333] text-center `}>
+                <p className="font-semibold md:font-black md:text-[25px] 2xl:text-[30px]" >+30</p>
+                <p className="font-light xl:text-[20px]  2xl:text-[30px]">مشروع تجاري</p>
               </div>
-              <div className="flex flex-col justify-center items-center gap-1 md:gap-2 w-[100px] aspect-square p-2 rounded-full border-[1px] border-[#333333]  text-center bg-[#333333] text-white">
-                <p className=" font-semibold md:font-bold">+30</p>
-                <p className="font-light">مشروع تجاري</p>
+              <div className="flex flex-col justify-center items-center gap-1 md:gap-2 w-[100px] md:w-[120px]  lg:w-[140px]  2xl:w-[230px] aspect-square p-2 rounded-full border-[1px] border-[#333333]  text-center bg-[#333333] text-white">
+                <p className=" font-semibold md:font-bold md:text-[25px] 2xl:text-[30px]">+30</p>
+                <p className="font-light xl:text-[20px] 2xl:text-[30px]">مشروع تجاري</p>
               </div>
-              <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2 w-[100px] aspect-square rounded-full border border-[#333333] text-center `}>
-                <p className="font-semibold md:font-bold">+30</p>
-                <p className="font-light">مشروع تجاري</p>
+              <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2 w-[100px] md:w-[120px]  lg:w-[140px] 2xl:w-[230px] aspect-square rounded-full border border-[#333333] text-center `}>
+                <p className="font-semibold md:font-bold md:text-[25px] 2xl:text-[30px]">+30</p>
+                <p className="font-ligh xl:text-[20px] 2xl:text-[30px]t">مشروع تجاري</p>
               </div>
             </div>
           </div>
@@ -131,15 +132,15 @@ export default function HomePage() {
             <div className="flex flex-row-reverse gap-3 ">
               <button
                 onClick={() => swiperRef.current?.slideNext()}
-                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
+                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
               >
-                <FiArrowRight className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[20px] 2xl:text-[28px]" />
+                <FiArrowRight className="text-[12px]  lg:text-[20px] 2xl:text-[28px]" />
               </button>
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
-                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
+                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
               >
-                <FiArrowLeft className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[20px] 2xl:text-[28px]" />
+                <FiArrowLeft className="text-[12px]   lg:text-[20px] 2xl:text-[28px]" />
               </button>
             </div>
 
@@ -153,27 +154,31 @@ export default function HomePage() {
         </section>
         {/* New Projects Section */}
         <section className="my-12 mx-4 sm:mx-8 md:mx-10 lg:mx-25 bg-white">
-          <div className='flex flex-col items-end text-start bg-white rounded-lg'>
-            <h2 className='text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>احدث مشاريع معمار</h2>
-            <p className='text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-8 px-4'>
-              تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
-            </p>
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between md:items-baseline mb-8 ">
+            <div className='flex flex-col items-center md:items-end  bg-white rounded-lg'>
+              <h2 className='text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>احدث مشاريع معمار</h2>
+              <p className='text-center text-sm  md:text-[16px]  2xl:text-[22px] font-[400] text-gray-700 mb-3 px-4'>
+                تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
+              </p>
+            </div>
+            <button className=" rounded-4xl px-7 py-3 text-[12px] w-40   xl:py-4    md:text-[12px] xl:text-[16px] xl:w-45 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> شاهد اكثر</button>
           </div>
+
           <NewProject unitsPerSlide={6} units={projectUnits} />
-          <CustomerOpinions />
         </section>
+        <CustomerOpinions />
         {/* Customer Opinions Section */}
         { /* job Section */}
         <section className="w-full my-8  ">
           <div
-            className="flex flex-row-reverse w-full justify-between  items-end mt-2 bg-cover bg-center h-[30vh] sm:h-[35vh] md:h-[40vh] relative"
+            className="flex flex-row-reverse w-full justify-between  items-end mt-2 bg-cover bg-center h-[30vh] sm:h-[35vh] md:h-[40vh] lg:h-[50vh] relative"
             style={{ backgroundImage: "url('/jobSectionBg.svg')" }}
           >
-            <div className="box-job flex flex-col w-[100%] md:w-[50%] h-[100%] text-end justify-start md:justify-center self-end gap-4 px-2 py-2  ">
-              <h2 className="text-[12px] sm:text-xl md:text-2xl text-white font-bold font-">
+            <div className="box-job flex flex-col w-[100%] md:w-[50%] h-[100%] text-end justify-start md:justify-center self-end gap-4 px-4 py-2 2xl:px-15 2xl:gap-6  ">
+              <h2 className="text-[12px] sm:text-xl md:text-2xl text-white font-bold ">
                 أنضم إلينا كجزء من الفريق.. لتصبح جزء من معمار للتطوير العقاري
               </h2>
-              <button className="rounded-full bg-white px-2 py-3 w-[40%] sm:w-1/3 md:w-1/2 text-[#383191] text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] self-end hover:text-white hover:bg-[#383191] transition-all duration-300">! قدم طلب الالتحاق الآن  </button>
+              <button className="rounded-full bg-white px-2 py-4 w-[40%] sm:w-1/3 md:w-1/2 text-[#383191] text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[25px] self-end hover:text-white hover:bg-[#383191] transition-all duration-300">! قدم طلب الالتحاق الآن  </button>
             </div>
             <Image
               src="/employees.svg"
@@ -187,25 +192,32 @@ export default function HomePage() {
         </section>
 
         <section className="my-12 mx-4 md:mx-10 lg:mx-25 md:my-25">
+          <div className="flex flex-col justify-center gap-2">
+            <div className="flex flex-col items-center md:flex-row-reverse md:items-baseline justify-between mb-8 ">
+              <div className='flex flex-col items-center md:items-end justify-center  bg-white rounded-lg'>
+                <h2 className='text-xl sm:text-2xl md:text-2xl  xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>قابل وكلائنا</h2>
+                <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[20px] 2xl:text-[25px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
+              </div>
+              <button className=" rounded-4xl px-7 py-3 text-[12px] w-40   xl:py-4    md:text-[12px] xl:text-[16px] xl:w-50 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> قابل وكلاء اكثر</button>
+            </div>
+            <Agents agents={agents} unitsPerSlide={3} />
 
-          <Agents agents={agents} unitsPerSlide={3} />
+          </div>
         </section>
         <section className="my-12 mx-4 sm:mx-8 md:mx-10 lg:mx-25 md:my-25 bg-[#F9F9F9] m-4 rounded-2xl ">
           <div className='flex flex-col  items-baseline justify-between   '>
-            <div className='flex flex-col w-full items-end text-start  bg-white rounded-lg '>
+            <div className='flex flex-col w-full items-center md:items-end text-start  bg-white rounded-lg '>
               <h2 className=' text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>  أخبار و فعليات</h2>
-              <p className='text-gray-600 mb-6 text-end text-[12px] 2xl:text-[20px] sm:text-md'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
+              <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[20px] 2xl:text-[25px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
 
             </div>
-            <div className='w-full  flex justify-end mb-4'>
+            <div className='w-full  flex justify-center md:justify-end mb-4'>
               <Link href="/news" passHref>
-                <button className='px-4 py-3 bg-white border-[#E37C35] border-[1px] text-[#E37C35] w-full text-[9px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] rounded-2xl hover:bg-[#E37C35] hover:text-white transition duration-200'>
-                  إطلع علي الاخبار
-                </button>
+                <button className=" rounded-4xl px-7 py-3 text-[12px] w-40   xl:py-4    md:text-[12px] xl:text-[16px] xl:w-55 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300">  إطلع علي الاخبار </button>
               </Link>
             </div>
           </div>
-          <NewsEvents news={news} unitsPerSlide={8} />
+          <NewsEvents news={news} unitsPerSlide={9} />
         </section>
         <Footer />
 

@@ -34,19 +34,19 @@ const DiscoverProjects = () => {
             >
                 {discoverProjectsData.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                            <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white top-2 sm:right-2 z-10">
+                        <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74  2xl:h-130 rounded-lg overflow-hidden">
+                            <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] 2xl:text-[20px] bg-white top-2 sm:right-2 z-10">
                                 {slide.projectsCount}
                             </div>
                             <Image src={slide.imageSrc} alt={slide.city} fill className="object-cover" />
                         </div>
                         <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
                             <div className="flex flex-col gap-1">
-                                <p className="text-[6px] md:text-[12px]">{slide.city}</p>
-                                <p className="text-[4px] md:text-[10px]">{slide.date}</p>
+                                <p className="text-[6px] md:text-[12px] xl:text-[16px] 2xl:text-[18px]">{slide.city}</p>
+                                <p className="text-[4px] md:text-[10px] xl:text-[14px] 2xl:text-[16px]">{slide.date}</p>
                             </div>
-                            <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                <FaLongArrowAltRight className="text-[12px] sm:text-[14px] rotate-225" />
+                            <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
+                                <FaLongArrowAltRight className="text-[12px]  sm:text-[10px] md:text-[12px] 2xl:text-[28px] rotate-225" />
                             </button>
                         </div>
                     </SwiperSlide>

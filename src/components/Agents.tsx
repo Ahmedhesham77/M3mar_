@@ -54,7 +54,7 @@ const Agents = ({
                             {agentsChunk.map((agent) => (
                                 <div
                                     key={agent.id}
-                                    className="flex flex-col lg:flex-row-reverse justify-between    2xl:h-60 rounded-xl border-2 border-[#333333] py-2 px-2"
+                                    className="flex flex-col lg:flex-row-reverse justify-between    2xl:h-60 rounded-xl border-2 border-[#D9D9D9] py-2 px-2"
                                 >
                                     <div className="relative flex flex-col justify-center items-center gap-1">
                                         <Image
@@ -65,7 +65,7 @@ const Agents = ({
                                             className="w-15! 2xl:w-20! rounded-full  "
                                         />
                                         <p className="text-[#333333] text-[14px] 2xl:text-[24px]">{agent.name}</p>
-                                        <div className="bg-[#333333] rounded-2xl text-[12px] 2xl:text-[20px] text-white py-1 px-2">
+                                        <div className="bg-[#333333] rounded-2xl text-[12px] md:text-[10px] 2xl:text-[18px] text-white py-1 px-2">
                                             {agent.jobTitle}
                                         </div>
                                     </div>
