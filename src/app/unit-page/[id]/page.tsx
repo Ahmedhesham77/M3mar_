@@ -44,12 +44,12 @@ export default function AboutProject() {
             <main className='w-full bg-white'>
                 <div className='w-full flex flex-col justify-center min-h-[90vh] md:min-h-[85vh] overflow-hidden ' style={{ backgroundImage: 'url(/unitPagebg.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 </div>
-                <div className='flex flex-row-reverse w-full justify-start items-start gap-2  px-4 md:px-8 mt-2 mb-4'>
+                <div className='flex flex-row-reverse  justify-start items-start gap-2  mx-4 md:mx-8 lg:mx-25 mt-2 mb-4'>
                     <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> مشاريعنا</p>
                     <MdOutlineKeyboardArrowLeft className='text-[18px] text-[#333333] self-center ' />
                     <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> الوكلاء</p>
                 </div>
-                <section className='w-full flex flex-col items-center justify-center  gap-4 px-4 md:px-8 bg-white'>
+                <section className=' flex flex-col items-center justify-center  gap-4 mx-4 md:mx-8 lg:mx-25 bg-white'>
                     <div className='flex flex-col justify-end items-end gap-3 w-full mb-4'>
 
 
@@ -59,7 +59,7 @@ export default function AboutProject() {
                         <p className='text-[18px] sm:text-[22px] md:text-[24px] text-[#333333] font-bold'>
                             {UnitName}
                         </p>
-                        <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-light'>
+                        <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#333333] font-light'>
                             تبدأ عملية إنشاء مشروع سكني بتخطيط دقيق يتضمن دراسة شاملة للموقع والتصميم المعماري. بعد ذلك، يتم تجهيز الأرض للبناء من خلال إزالة العوائق وتحديد الأساسات بشكل دقيق. تلي هذه المرحلة عملية البناء الفعلية، التي تشمل إنشاء الهيكل الخارجي وتوزيع المساحات الداخلية بشكل متوازن. بعد الانتهاء من الهيكل، تأتي مرحلة التشطيبات النهائية، حيث يتم تركيب النوافذ والأبواب والديكورات بعناية. أخيراً، يتم تسليم المشروع بعد التأكد من مطابقته للمواصفات والمعايير المطلوبة، مما يضمن جودة العمل ورضا العملاء.
                         </p>
                     </div>
@@ -72,16 +72,16 @@ export default function AboutProject() {
                     <div className='bg-white'>
                         <div className='flex flex-col gap-4 justify-end items-end mb-4'>
                             <div className='flex flex-col sm:flex-row-reverse justify-between w-full mb-2 items-center'>
-                                <h1 className='text-[16px] sm:text-[18px] md:text-[20px]  font-bold'>
+                                <h1 className='text-[16px] sm:text-[24px] md:text-[28px] xl:text-[32px]  font-600 text-[#333333]'>
                                     تفاصيل الوحده وخريطه الوحده                                </h1>
-                                <div className='w-full sm:w-1/3 rounded-3xl bg-[#383191] py-2 px-3 text-white border hover:bg-white hover:text-[#383191] hover:border-[#383191] duration-300 flex flex-row-reverse justify-center gap-2 items-baseline  '>
-                                    <GoDownload className='text-[18px] sm:text-[20px] md:text-[22px] text-center' />
-                                    <p className='text-[12px] sm:text-[14px] md:text-[16px] text-center'>تنزيل البروشور</p>
+                                <div className='w-full sm:w-1/4 rounded-4xl bg-[#383191] py-5 px-3 text-white border hover:bg-white hover:text-[#383191] hover:border-[#383191] duration-300 flex flex-row-reverse justify-center gap-2 items-center  '>
+                                    <GoDownload className='text-[18px] sm:text-[20px] md:text-[22px] xl:text-[26px] text-center' />
+                                    <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-center'>تنزيل البروشور</p>
                                 </div>
                             </div>
 
 
-                            <p className='text-[10px] sm:text-[12px] md:text-[14px] font-semibold text-end text-[#333333]'>
+                            <p className='text-[10px] sm:text-[12px] md:text-[14px] xl:text-[18px] 2xl:text-[20px] font-semibold text-end text-[#626262] leading-10 text-'>
                                 موقعها المركزي ما بين الرحاب ومدينتي وتوسطها أرقى المجتمعات العمرانية وقربها من العاصمة الإدارية الجديدة جعل لها مكانه استراتيجية هامة, فهي تعتبر المدخل الجديد للقاهرة الجديدة.
                                 مساحة منطقة بيت الوطن 4700 فدان يضم حوالي 12000 قطعة سكنية من المتوقع ان تضم 150 ألف وحدة سكنية ومن المتوقع ان يسكنه اكتر من نص مليون نسمة.
                                 يتكون بيت الوطن من 8 احياء سكنية تنوعت الكثافة السكانية لكل حي – كل منطقه لها الخدمات الخاصة بيها.
@@ -146,7 +146,7 @@ export default function AboutProject() {
                     </div>
 
 
-                    <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-16 md:px-18 py-4'>
+                    <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-[30px] md:px-[40px] py-4'>
                         <form className='w-full flex flex-col justify-start  gap-2 '>
                             <div className='flex flex-col justify-start  gap-2 mb-4'>
                                 <h2 className='text-[18px] sm:text-[20px] md:text-[22px] font-bold text-[#333333]'>

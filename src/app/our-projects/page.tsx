@@ -15,13 +15,13 @@ export default function OurProjects() {
     return (
         <main className='w-full'>
             <Navbar />
-            {/* Header*/}
+            {/* Hero*/}
             <section
                 className="w-full flex flex-col justify-center min-h-[90vh] md:min-h-[85vh] overflow-hidden "
                 style={{ backgroundImage: "url('/OurProjectsHero.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center    " }}
             >
                 <div className="flex items-center justify-center w-full">
-                    <div className="text-center w-full sm:max-w-screen md:max-w-screen-lg 2xl:max-w-screen-2xl px-4 mx-auto">
+                    <div className="text-center w-full sm:max-w-screen md:max-w-[1240px] 2xl:max-w-screen-2xl px-4 mx-auto">
                         <h1 className="text-2xl sm:text-4xl 2xl:text-[45px] font-bold mb-4 drop-shadow-lg">مشاريعنا</h1>
                         <p className="text-lg md:text-xl 2xl:text-[25px] drop-shadow-sm">
                             مشاريع تجاريه و سكنيه و طبيه<br />
@@ -98,8 +98,8 @@ export default function OurProjects() {
             <section className='py-2 mx-4 md:mx-8 lg:mx-25 bg-white'>
                 <div className={`flex flex-col items-end justify-between`}>
                     <div className='flex flex-col items-end text-start bg-white rounded-lg'>
-                        <h2 className='text-lg sm:text-2xl md:text-3xl xl:text-4xl mt-4 font-bold mb-4'>احدث مشاريع معمار</h2>
-                        <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-lg xl:text-xl 2xl:text-2xl'>
+                        <h2 className='text-lg sm:text-2xl md:text-3xl xl:text-[32px] mt-4 font-600 mb-4'>احدث مشاريع معمار</h2>
+                        <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-lg  2xl:text-2xl'>
                             تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
                         </p>
                     </div>
@@ -113,8 +113,8 @@ export default function OurProjects() {
                                     : "bg-[#F3F3F3] text-[#333333] border-transparent"
                                     }`}
                             >
-                                <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] 2xl:text-[25px]'>{type}</p>
-                                <div className='relative w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 '>
+                                <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] 2xl:text-[22px]'>{type}</p>
+                                <div className='relative w-6 h-6  '>
                                     <Image src="/buildings-2.svg" alt="filter" fill />
                                 </div>
                             </div>

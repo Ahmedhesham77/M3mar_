@@ -8,7 +8,7 @@
   font-size: 18px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 420px) {
  .grid-slider{
     grid-template-columns: 1fr !important; }
   

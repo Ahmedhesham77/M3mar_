@@ -21,8 +21,8 @@ export default function OurProjects() {
             >
                 <div className="flex items-start justify-center w-full">
                     <div className="text-center items-start w-full sm:max-w-screen md:max-w-screen-xl px-2 py-4 mt-18 mx-auto">
-                        <h1 className="text-lg md:text-4xl font-bold mb-4 drop-shadow-lg text-white">انضم إلى أحد رواد السوق في مصر</h1>
-                        <p className="text-sm sm:text-lg md:text-xl  text-white">
+                        <h1 className="text-lg md:text-4xl xl:text-[40px] font-bold mb-4 drop-shadow-lg text-white">انضم إلى أحد رواد السوق في مصر</h1>
+                        <p className="text-sm sm:text-lg md:text-xl 2xl:text-[22px]  text-white">
 
                             تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
                         </p>
@@ -33,14 +33,14 @@ export default function OurProjects() {
             </section>
 
             {/* form */}
-            <section className='w-full flex flex-col items-center justify-center  gap-4 px-4 md:px-8 bg-white mt-4'>
-                <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-16 md:px-18 py-4'>
+            <section className=' flex flex-col items-center justify-center  gap-4 mx-4 md:mx-8 lg:mx-25 bg-white mt-4'>
+                <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-[30px] md:px-[40px] py-4'>
 
                     <form className='w-full flex flex-col justify-start  gap-2 '>
                         <div className='flex flex-col justify-start  gap-2 mb-4'>
-                            <h2 className='text-[18px] sm:text-[20px] md:text-[22px] font-bold text-[#333333]'>
+                            <h2 className='text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-600 text-[#333333]'>
                                 تقديم الوظائف  </h2>
-                            <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'>
+                            <p className='text-[12px] sm:text-[14px] md:text-[18px] text-[#4C4C4C] font-semibold'>
                                 إذا كنت تبحث عن فرصة عمل، لا تتردد في التواصل معنا!                            </p>
                         </div>
                         <div className='flex flex-col justify-center gap-2 px-2 w-full'>
@@ -106,7 +106,7 @@ export default function OurProjects() {
 
                     </form>
 
-                    <button className='rounded-2xl bg-[#E37C35] border text-white py-3 px-4 hover:bg-white  hover:border-[#E37c35] hover:text-[#E37C35] transition-all duration-300 self-end'>إرسال الرساله</button>
+                    <button className='rounded-4xl text-[14px] md:text-[18px] bg-[#E37C35] border text-white py-3 px-4 hover:bg-white  hover:border-[#E37c35] hover:text-[#E37C35] transition-all duration-300 self-end'>إرسال الرساله</button>
 
                 </div>
             </section>

@@ -27,24 +27,24 @@ export default function OurProjects() {
             >
                 <div className="flex items-center justify-center w-full">
                     <div className="text-center w-full sm:max-w-screen md:max-w-screen-xl px-4 py-4 mx-auto">
-                        <h1 className="text-xl md:text-2xl font-bold mb-4 drop-shadow-lg text-white">تواصل معنا</h1>
-                        <p className="text-lg md:text-xl  text-white">
+                        <h1 className="text-xl md:text-2xl xl:text-[40px] font-bold mb-4 drop-shadow-lg text-white">تواصل معنا</h1>
+                        <p className="text-lg md:text-xl 2xl:text-[22px] text-white">
 
                             تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
                         </p>
 
-                        <div className="flex flex-col justify-center  gap-4 mt-6 mb-2 pt-6 pb-2 px-4 bg-white text-black font-medium rounded-2xl w-full">
+                        <div className="flex flex-col justify-center  gap-4 mt-6 mb-2 pt-6 pb-2 px-4 bg-white text-black md:max-w-[1236px] font-medium rounded-2xl w-full">
 
 
                             <div className="flex flex-col sm:flex-row-reverse  items-stretch gap-0 sm:gap-4 justify-around w-full border-b-3 border-gray-200 ">
                                 <div className="flex flex-col justify-start gap-2 border-r-2 pr-4 border-gray-200 h-full min-h-[70px]">
                                     <div className="flex flex-row-reverse items-center gap-2">
                                         <FaPhoneAlt className="text-[20px] sm:text-[22px] md:text-[24px]" />
-                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] text-black font-light">
+                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-black font-light">
                                             رقم الهاتف
                                         </h3>
                                     </div>
-                                    <p className="text-[12px] sm:text-[14px] md:text-[16px] text-black font-light">
+                                    <p className="text-[12px] sm:text-[14px] md:text-[16px ] xl:text-[18px] text-black font-light">
                                         9200 000 00
                                     </p>
                                 </div>
@@ -52,13 +52,13 @@ export default function OurProjects() {
                                 <div className="flex flex-col justify-start gap-2 border-r-2 border-gray-200 pr-4 h-full min-h-[70px]">
                                     <div className="flex flex-row-reverse items-center gap-2">
                                         <MdEmail className="text-[20px] sm:text-[22px] md:text-[24px]" />
-                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] text-black font-light">
+                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-black font-light">
                                             البريد الالكتروني
                                         </h3>
                                     </div>
                                     <a
                                         href="mailto:contact@creativeideas.com"
-                                        className="text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-light hover:underline"
+                                        className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-[#333333] font-light hover:underline"
                                     >
                                         contact@creativeideas.com
                                     </a>
@@ -67,14 +67,14 @@ export default function OurProjects() {
                                 <div className="flex flex-col justify-start gap-2 border-r-2 border-gray-200 pr-4 h-full min-h-[70px]">
                                     <div className="flex flex-row-reverse items-center gap-2">
                                         <FaClock className="text-[20px] sm:text-[22px] md:text-[24px]" />
-                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] text-black font-light">
+                                        <h3 className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-black font-light">
                                             مواعيد العمل
                                         </h3>
                                     </div>
-                                    <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-light">
+                                    <p className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-[#333333] font-light">
                                         السبت: 9 صباحًا – 4 مساءً
                                     </p>
-                                    <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-light">
+                                    <p className="text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-[#333333] font-light">
                                         الأحد-الجمعة: 9 صباحًا – 6 مساءً
                                     </p>
                                 </div>
@@ -103,9 +103,9 @@ export default function OurProjects() {
             </section>
 
             {/* form */}
-            <section className='w-full flex flex-col items-center justify-center  gap-4 px-4 md:px-8 bg-white mt-4'>
-                <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-16 md:px-18 py-4'>
-                    <div className='flex flex-row-reverse justify-start gap-2 mb-4 border-b-2 border-[#333333] w-full pb-2'>
+            <section className=' flex flex-col items-center justify-center  gap-4 mx-4 md:mx-8 lg:mx-25 bg-white mt-4'>
+                <div className='flex flex-col justify-center items-center gap-2 text-end w-full mb-4 border-2 border-[#626262] rounded-2xl px-4 sm:px-[30px] md:px-[40px] py-4'>
+                    <div className='flex flex-row-reverse justify-start gap-2 mb-4 border-b-1 border-[#817777] w-full pb-2'>
                         <button
                             onClick={() => handleClick('contact')}
                             className={`rounded-3xl cursor-pointer p-2 transition-colors duration-200 ${activeTab === 'contact'
@@ -128,9 +128,9 @@ export default function OurProjects() {
                     </div>
                     <form className='w-full flex flex-col justify-start  gap-2 '>
                         <div className='flex flex-col justify-start  gap-2 mb-4'>
-                            <h2 className='text-[18px] sm:text-[20px] md:text-[22px] font-bold text-[#333333]'>
+                            <h2 className='text-[18px] sm:text-[22px] md:text-[28px] xl:text-[32px] font-600 text-[#333333]'>
                                 تواصل معانا الان   </h2>
-                            <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'>
+                            <p className='text-[12px] sm:text-[14px] md:text-[18px] text-[#333333] font-400'>
                                 تقدر تتواصل معانا في أي وقت، إحنا هنا دايمًا!
                             </p>
                         </div>

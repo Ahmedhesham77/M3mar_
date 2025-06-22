@@ -1,7 +1,6 @@
 'use client';
 import React, { useRef } from 'react'
 import Image from 'next/image'
-import { CiCalendarDate } from "react-icons/ci";
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,23 +48,23 @@ const NewsEvents = ({
                 className="mySwiper">
                 {unitSlides.map((unitChunk, index) => (
                     <SwiperSlide key={index}>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  ">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4  ">
                             {unitChunk.map((unit) => (
                                 <div key={unit.id} className='flex flex-col gap-1'>
-                                    <div className="relative w-full h-58 md:h-78 2xl:h-120 rounded-xl overflow-hidden ">
+                                    <div className="relative w-full aspect-[398/420] rounded-2xl sm:rounded-4xl overflow-hidden ">
                                         <Image src={unit.img} alt="مشروع" fill className="object-cover" />
-                                        <div className="absolute rounded-2xl  inset-0 bg-black/40  h-full  z-10 flex flex-col justify-end p-3 text-white">
-                                            <div className="flex flex-row-reverse justify-between text-[9px] sm:text-[12px] md:text-[14px] font-semibold">
-                                                <p className='text-[12px] sm:text-[14px] md:text-[16px] 2xl:text-[22px]' >{unit.name}</p>
+                                        <div className="absolute   inset-0 bg-black/40  h-full  z-10 flex flex-col justify-end p-3 text-white">
+                                            <div className="flex flex-row-reverse justify-between text-[9px] sm:text-[12px] md:text-[14px] font-500">
+                                                <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[24px] 2xl:text-[26px]' >{unit.name}</p>
                                             </div>
-                                            <div className="flex  items-center rounded-2xl  border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs">
+                                            <div className="flex  items-center rounded-2xl  border-white w-fit px-2   gap-1 sm:mt-1 self-end ">
 
-                                                <p className='text-[10px] sm:text-[12px] md:text-[14px] 2xl:text-[22px]'>{unit.date}</p>
-                                                <CiCalendarDate className="text-white text-sm 2xl:text-[22px]" />
+                                                <p className='text-[10px] sm:text-[12px] md:text-[14px] xl:text-[16px] 2xl:text-[20px] font-400'>{unit.date}</p>
+
                                             </div>
-                                            <button className='w-full flex justify-center gap-1 items-center  rounded-2xl py-3 mx-auto bg-white text-[#E37C35]  hover:bg-[#E37C35] hover:text-white transition duration-200 mt-2'
+                                            <button className='w-full flex justify-center items-center  rounded-4xl py-2 sm:py-4 mx-auto bg-white text-[#E37C35]  hover:bg-[#E37C35] hover:text-white transition duration-200 mt-2'
                                                 onClick={() => router.push(`/single-news-page/${unit.id}?title=${encodeURIComponent(unit.name)}&date=${encodeURIComponent(unit.date)}`)}>
-                                                <p className='text-[8px] sm:text-[12px] md:text-[14px] font-semibold 2xl:text-[20px]'>اقرأ المزيد</p>
+                                                <p className='text-[10px] sm:text-[12px] md:text-[14px]  xl:text-[20px] font-500  '>اقرأ المزيد</p>
                                             </button>
                                         </div>
                                     </div>
@@ -77,8 +76,8 @@ const NewsEvents = ({
 
 
                 <div className='flex items-center gap-2 justify-center md:justify-end px-15 mt-4'>
-                    <button onClick={() => swiperRef.current?.slideNext()} className='rounded-full bg-[#E37C35] p-1 2xl:p-2 text-[16px] sm:text-[20px] 2xl:text-[28px] 2xl:w-12 2xl:h-12 text-white transition-all hover:bg-white hover:text-[#E37c35] duration-300'> <FiArrowLeft /></button>
-                    <button onClick={() => swiperRef.current?.slidePrev()} className='rounded-full bg-[#E37C35] p-1 2xl:p-2 text-[16px] sm:text-[20px] 2xl:text-[28px] 2xl:w-12 2xl:h-12 text-white transition-all hover:bg-white hover:text-[#E37c35] duration-300'><FiArrowRight /></button>
+                    <button onClick={() => swiperRef.current?.slideNext()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'> < FiArrowLeft /></button>
+                    <button onClick={() => swiperRef.current?.slidePrev()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'><FiArrowRight /></button>
                 </div>
             </Swiper>
 

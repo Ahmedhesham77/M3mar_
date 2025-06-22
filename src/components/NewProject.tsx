@@ -59,7 +59,7 @@ const NewProject = ({
             >
                 {unitSlides.map((unitsChunk, index) => (
                     <SwiperSlide key={index}>
-                        <div className="grid-slider grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div className="grid-slider grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                             {unitsChunk.map((unit) => {
                                 const isSold = unit.sold;
 
@@ -73,25 +73,25 @@ const NewProject = ({
                                             );
                                         }}
                                     >
-                                        <div className="relative w-full h-48 md:h-78 xl:120 2xl:h-150 rounded-xl overflow-hidden">
+                                        <div className="relative w-full aspect-[385/391] rounded-xl overflow-hidden">
                                             <Image
                                                 src={unit.img}
                                                 alt={unit.title}
                                                 fill
                                                 className="object-cover"
                                             />
-                                            <div className="absolute rounded-2xl bottom-0 right-0 left-0 bg-black/40 z-10 flex flex-col justify-start p-3 text-white">
-                                                <div className="flex flex-row-reverse justify-between text-[9px] sm:text-[12px] xl:text-[22px]">
+                                            <div className="absolute rounded-2xl bottom-0 right-0 left-0 bg-black/40  z-10 flex flex-col justify-start p-3 m-2 sm:m-2 text-white">
+                                                <div className="flex flex-row-reverse justify-between text-[12px]  xl:text-[20px] 2xl:text-[22px]">
                                                     <p>{unit.title}</p>
-                                                    <div className="bg-[#E37C35] rounded-2xl px-2 py-1 text-[7px] sm:text-[10px] xl:text-[22px]">
+                                                    <div className="bg-[#E37C35] rounded-2xl px-2 py-1 text-[10px]  md:text-[12px] lg:text-[14px] 2xl:text-[16px] ">
                                                         رقم {unit.id}
                                                     </div>
                                                 </div>
-                                                <div className="flex items-center rounded-2xl border-1 border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs xl:text-[20px]">
+                                                <div className="flex items-center rounded-2xl border-1 border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs lg:text-[14px] xl:text-[16px]">
                                                     <p>{unit.date}</p>
                                                     <CiCalendarDate className="text-white text-sm" />
                                                 </div>
-                                                <div className="flex items-center rounded-2xl border-1 border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs xl:text-[20px]">
+                                                <div className="flex items-center rounded-2xl border-1 border-white w-fit px-2 py-1 gap-1 mt-1 self-end text-[9px] sm:text-xs lg:text-[14px] xl:text-[16px]">
                                                     <p>{unit.location}</p>
                                                     <FaLocationDot className="text-white text-sm" />
                                                 </div>
@@ -99,12 +99,12 @@ const NewProject = ({
                                         </div>
 
                                         <button
-                                            className={`w-full flex justify-center gap-1 items-center text-white rounded-2xl py-3 2xl:py-6 ${isSold ? "bg-[#C3C3C3]" : "bg-[#383191]"
+                                            className={`w-full flex justify-center gap-1 items-center text-white rounded-4xl py-3 2xl:py-6 ${isSold ? "bg-[#C3C3C3]" : "bg-[#383191]"
                                                 }`}
                                             disabled={isSold}
                                         >
-                                            <p className="text-[8px] sm:text-[12px] 2xl:text-[20px]">تواصل عبر الواتساب</p>
-                                            <IoLogoWhatsapp className="text-[12px] sm:text-[18px] 2xl:text-[30px]" />
+                                            <p className="text-[12px] sm:text-[14px] lg:text-[18px] 2xl:text-[20px]">تواصل عبر الواتساب</p>
+                                            <IoLogoWhatsapp className="text-[18px]  lg:text-[22px] 2xl:text-[30px]" />
                                         </button>
                                     </div>
                                 );
@@ -112,7 +112,7 @@ const NewProject = ({
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className='flex items-center gap-2 justify-center md:justify-end px-15 mt-4'>
+                <div className='flex items-center gap-2 justify-center md:justify-end  mt-4'>
                     <button onClick={() => swiperRef.current?.slideNext()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'> <FiArrowLeft /></button>
                     <button onClick={() => swiperRef.current?.slidePrev()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'><FiArrowRight /></button>
                 </div>

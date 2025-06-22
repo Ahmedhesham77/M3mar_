@@ -39,7 +39,7 @@ const Agents = ({
     const agentsSlides = chunkArray(agents, unitsPerSlide);
     const swiperRef = useRef<SwiperCore | null>(null);
     return (
-        <div className='flex flex-col items-center justify-center w-full h-full  mb-4'>
+        <div className='flex flex-col items-center justify-center w-full h-full mt-8  mb-4'>
             <Swiper
                 slidesPerView={1} // فقط واحدة
                 spaceBetween={10}
@@ -62,7 +62,7 @@ const Agents = ({
                                             src={agent.img}
                                             width={0}
                                             height={0}
-                                            className="w-15! 2xl:w-20! rounded-full  "
+                                            className="w-15! 2xl:w-17! rounded-full  "
                                         />
                                         <p className="text-[#333333] text-[14px] 2xl:text-[24px]">{agent.name}</p>
                                         <div className="bg-[#333333] rounded-2xl text-[12px] md:text-[10px] 2xl:text-[18px] text-white py-1 px-2">
@@ -74,16 +74,16 @@ const Agents = ({
                                         <div className="flex flex-row-reverse justify-between w-full gap-2 text-[#333333] text-[12px]">
                                             <p className="text-[9px] md:text-[12px] 2xl:text-[20px] self-center">المبيعات الناجحة</p>
                                             <div className="flex flex-row-reverse gap-1">
-                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-medium">{agent.sales}+</p>
-                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-medium">عقار</p>
+                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-400">{agent.sales}+</p>
+                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-400">عقار</p>
                                             </div>
                                         </div>
 
                                         <div className="flex flex-row-reverse justify-between text-[#333333] text-[12px]">
                                             <p className="text-[9px] md:text-[12px] 2xl:text-[20px] self-center">مناطق التغطية</p>
                                             <div className="flex flex-row-reverse gap-1">
-                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-medium">{agent.aria}</p>
-                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-medium">مناطق</p>
+                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-400">{agent.aria}</p>
+                                                <p className="text-[12px] md:text-[16px] 2xl:text-[20px] font-400">مناطق</p>
                                             </div>
                                         </div>
 
@@ -91,11 +91,11 @@ const Agents = ({
                                             <p className='text-[12px] 2xl:text-[20px]'>طرق التواصل مع الوكيل</p>
                                             <div className="flex flex-row-reverse justify-center gap-1">
                                                 <FiPhone className="text-[14px] 2xl:text-[20px] self-center" />
-                                                <p className='text-[12px] 2xl:text-[20px]'>{agent.phone}</p>
+                                                <p className='text-[12px] md:text-[14px] 2xl:text-[20px]'>{agent.phone}</p>
                                             </div>
                                             <div className="flex flex-row-reverse justify-center gap-1">
                                                 <PiHandbag className="text-[14px] 2xl:text-[20px] self-center" />
-                                                <p className='text-[12px] 2xl:text-[20px]'>{agent.secondPhone}</p>
+                                                <p className='text-[12px] md:text-[14px] 2xl:text-[20px]'>{agent.secondPhone}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -106,8 +106,8 @@ const Agents = ({
                 ))}
             </Swiper>
             <div className="flex flex-row-reverse gap-3 mt-4 self-center md:self-end ">
-                <button onClick={() => swiperRef.current?.slideNext()} className='rounded-full bg-[#E37C35] p-1 2xl:p-2 text-[16px] sm:text-[20px] 2xl:text-[28px] 2xl:w-12 2xl:h-12 text-white transition-all hover:bg-white hover:text-[#E37c35] duration-300'> <FiArrowRight /></button>
-                <button onClick={() => swiperRef.current?.slidePrev()} className='rounded-full bg-[#E37C35] p-1 2xl:p-2 text-[16px] sm:text-[20px] 2xl:text-[28px] 2xl:w-12 2xl:h-12 text-white transition-all hover:bg-white hover:text-[#E37c35] duration-300'><FiArrowLeft /></button>
+                <button onClick={() => swiperRef.current?.slideNext()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'> < FiArrowRight /></button>
+                <button onClick={() => swiperRef.current?.slidePrev()} className='rounded-full bg-[#E37C35] p-1 text-white text-[16px] flex justify-center items-center sm:text-[20px] lg:w-10 lg:h-10  2xl:text-[28px] 2xl:w-12 2xl:h-12 2xl:p-2  transition-all hover:bg-white hover:text-[#E37c35] duration-300'><FiArrowLeft /></button>
             </div>
         </div>
 

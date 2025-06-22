@@ -71,11 +71,11 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
-                        <div className="rounded-full bg-white p-1"><FaFacebookF color="#2A256D" className="md:w-5 md:h-5 w-5 h-5" /></div>
-                        <div className="rounded-full bg-white p-1"><FaInstagram color="#2A256D" className="md:w-5 md:h-5 w-5 h-5" /></div>
-                        <div className="rounded-full bg-white p-1"><FaYoutube color="#2A256D" className="md:w-5 md:h-5 w-5 h-5" /></div>
-                        <div className="rounded-full bg-white p-1"><FaXTwitter color="#2A256D" className="md:w-5 md:h-5 w-5 h-5" /></div>
-                        <div className="rounded-full bg-white p-1"><FaLinkedinIn color="#2A256D" className="md:w-5 md:h-5 w-5 h-5" /></div>
+                        <div className="rounded-full bg-white p-1"><FaFacebookF color="#2A256D" className="md:w-5 md:h-5 w-5 h-5 xl:w-[24px] xl:h-[24px]" /></div>
+                        <div className="rounded-full bg-white p-1"><FaInstagram color="#2A256D" className="md:w-5 md:h-5 w-5 h-5 xl:w-[24px] xl:h-[24px]" /></div>
+                        <div className="rounded-full bg-white p-1"><FaYoutube color="#2A256D" className="md:w-5 md:h-5 w-5 h-5 xl:w-[24px] xl:h-[24px]" /></div>
+                        <div className="rounded-full bg-white p-1"><FaXTwitter color="#2A256D" className="md:w-5 md:h-5 w-5 h-5 xl:w-[24px] xl:h-[24px]" /></div>
+                        <div className="rounded-full bg-white p-1"><FaLinkedinIn color="#2A256D" className="md:w-5 md:h-5 w-5 h-5 xl:w-[24px] xl:h-[24px]" /></div>
                     </div>
                 </div>
 

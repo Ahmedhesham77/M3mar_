@@ -23,8 +23,8 @@ export default function OurProjects() {
                 />
                 <div className="flex items-center justify-center w-full">
                     <div className="text-center w-full sm:max-w-screen md:max-w-screen-xl px-4 mx-auto">
-                        <h1 className="text-xl md:text-4xl font-bold mb-4 drop-shadow-lg text-white">قابل وكلائنا</h1>
-                        <p className="text-lg md:text-xl drop-shadow-sm text-white">
+                        <h1 className="text-xl md:text-4xl xl:text-[40px] font-bold mb-4 drop-shadow-lg text-white">قابل وكلائنا</h1>
+                        <p className="text-lg md:text-xl 2xl:text-[22px] drop-shadow-sm text-white">
                             تعمل شرکة معمار للاستثمار العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
                         </p>
 
@@ -33,8 +33,11 @@ export default function OurProjects() {
                 </div>
             </section>
 
+            <section className='mx-4 md:mx-8 lg:mx-25'>
 
-            <Agents agents={agents} unitsPerSlide={6} />
+                <Agents agents={agents} unitsPerSlide={9} />
+            </section>
+
             <Fotter />
         </main >
     )

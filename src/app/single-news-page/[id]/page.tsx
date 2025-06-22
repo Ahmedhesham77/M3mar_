@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import Image from 'next/image'
 import Navbar from "@/components/NavBar"
 import Fotter from '@/components/Footer'
+import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 
 
 export default function OurProjects() {
@@ -27,20 +28,25 @@ export default function OurProjects() {
                 />
 
             </section>
+            <div className='flex flex-row-reverse  justify-start items-start gap-2  mx-4 md:mx-8 lg:mx-25 mt-5 mb-4'>
+                <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> مشاريعنا</p>
+                <MdOutlineKeyboardArrowLeft className='text-[18px] text-[#333333] self-center ' />
+                <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> الوكلاء</p>
+            </div>
 
-            <section className='py-2 px-4 md:px-8 bg-white'>
+            <section className='py-2 mx-4 md:mx-8 lg:mx-25 bg-white'>
                 <div className='flex flex-row-reverse gap-4 items-centers justify-between mt-4 mb-6'>
-                    <h1 className='text-[18px] sm:text-[18px] md:text-[22px] font-bold text-[#333333]'> {title} </h1>
+                    <h1 className='text-[18px] sm:text-[24px] md:text-[28px] xl:text-[32px] font-bold text-[#333333]'> {title} </h1>
                     <div className='flex flex-row-reverse gap-10 items-center text-center'>
                         <div className="flex items-center gap-2">
-                            <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333]'>
+                            <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-[#333333]'>
                                 تاريخ النشر: {date}
                             </p>
                             <span className="w-2 h-2 rounded-full bg-gray-400"></span>
                         </div>
 
                         <div className="flex items-center gap-2">
-                            <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333]'>
+                            <p className='text-[12px] sm:text-[14px] md:text-[16px] xl:text-[18px] text-[#333333]'>
                                 وقت القراءة: دقيقة واحدة
                             </p>
                             <span className="w-2 h-2 rounded-full bg-gray-400"></span>

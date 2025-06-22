@@ -15,6 +15,7 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '../../globals.css';
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 
 
@@ -62,15 +63,19 @@ export default function HomePage() {
                 </section>
 
 
-
+                <div className='flex flex-row-reverse  justify-start items-start gap-2  mx-4 md:mx-8 lg:mx-25 mt-5 mb-4'>
+                    <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> مشاريعنا</p>
+                    <MdOutlineKeyboardArrowLeft className='text-[18px] text-[#333333] self-center ' />
+                    <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> الوكلاء</p>
+                </div>
                 {/* about section */}
-                <section className=" px-4 md:px-8 bg-white mt-8">
+                <section className=" mx-4 md:mx-8 lg:mx-25 bg-white mt-8">
                     <div className="flex flex-col gap-4 justify-center">
                         <div className="flex flex-col gap-4 justify-start self-end">
-                            <h1 className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-end">
+                            <h1 className="text-[16px] sm:text-[18px] md:text-[28px] xl:text-[32px] font-600 text-[#333333] text-end">
                                 {UnitName}
                             </h1>
-                            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold text-[#333333] text-end">
+                            <p className="text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[22px] font-400 text-[#626262] text-end">
                                 تبدأ عملية إنشاء مشروع سكني بتخطيط دقيق يتضمن دراسة شاملة للموقع والتصميم المعماري. بعد ذلك، يتم تجهيز الأرض للبناء من خلال إزالة العوائق وتحديد الأساسات بشكل دقيق. تلي هذه المرحلة عملية البناء الفعلية، التي تشمل إنشاء الهيكل الخارجي وتوزيع المساحات الداخلية بشكل متوازن. بعد الانتهاء من الهيكل، تأتي مرحلة التشطيبات النهائية، حيث يتم تركيب النوافذ والأبواب والديكورات بعناية. أخيراً، يتم تسليم المشروع بعد التأكد من مطابقته للمواصفات والمعايير المطلوبة، مما يضمن جودة العمل ورضا العملاء.
                             </p>
 
@@ -82,11 +87,11 @@ export default function HomePage() {
 
 
                 {/* m3mar investment vidioes */}
-                <section>
-                    <div className='flex flex-col items-center justify-center w-full h-full  px-4 sm:px-22  py-8 '>
+                <section className="mx-4 md:mx-8 lg:mx-25">
+                    <div className='flex flex-col items-center justify-center w-full h-full    py-8 '>
                         <div className='flex flex-col justify-center sm:flex-row-reverse sm:justify-between items-center w-full mb-8'>
                             <div className='flex-col gap-1'>
-                                <h2 className='text-md sm:text-xl font-bold text-right'>فديوهات عن {UnitName}</h2>
+                                <h2 className='text-md sm:text-xl md:text-[28px] lg:text-[32px] text-[#333333]  font-600 text-right'>فديوهات عن {UnitName}</h2>
 
                             </div>
                             <div className="flex flex-row-reverse gap-3 mt-4 self-center md:self-end bg-white ">
@@ -102,6 +107,7 @@ export default function HomePage() {
                                 320: { slidesPerView: 2 },
                                 460: { slidesPerView: 3 },
                                 1020: { slidesPerView: 4 },
+
                             }}
                             onBeforeInit={(swiper) => {
                                 swiperRef.current = swiper;
@@ -111,7 +117,7 @@ export default function HomePage() {
                             {videos.map((videoId) => (
                                 <SwiperSlide key={videoId}>
                                     <div
-                                        className="w-full h-64 md:h-96 rounded-lg overflow-hidden cursor-pointer relative"
+                                        className="w-full aspect-[302/280] rounded-lg overflow-hidden cursor-pointer relative"
                                         onClick={() => setSelectedVideo(videoId)}
                                     >
                                         <Image
@@ -155,9 +161,9 @@ export default function HomePage() {
                     </div>
                 </section>
                 { /* gallery */}
-                <section className="px-4 md:px-8 bg-white mt-4 mb-8">
+                <section className="mx-4 md:mx-8 lg:mx-25 bg-white mt-4 mb-8">
                     <div className="flex flex-col gap-4">
-                        <h1 className="text-[18px] sm:text-[20px] md:text-[22px] text-end font-bold ">معرض صور {UnitName}</h1>
+                        <h1 className="text-[18px] sm:text-[20px] md:text-[28px] xl:text-[32px] text-end font-600 text-[#333333] ">معرض صور {UnitName}</h1>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2  sm:h-[600px]">
 
                             <div className="flex flex-row gap-1 sm:flex-col sm:gap-4 sm:h-full">

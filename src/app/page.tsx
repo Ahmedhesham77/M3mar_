@@ -64,11 +64,11 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="text-center text-white px-4">
-              <h1 className="text-xl md:text-4xl lg:text-[40px] font-bold mb-4 drop-shadow-lg">
+              <h1 className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold mb-4 drop-shadow-lg">
                 معمار للتطوير العقاري              </h1>
               <p className="text-lg md:text-xl drop-shadow-sm">
                 اختيارك الاول دائما للتطوير و الاستثمار العقاري              </p>
-              <div className="flex justify-center items-center gap-2 mx-auto mt-6 w-1/2 py-3 bg-[#E37C35] text-white font-medium rounded-full hover:bg-gray-100 hover:text-[#E37C35] transition">
+              <div className="flex justify-center items-center gap-2 mx-auto mt-6 w-1/2 h-[50px] lg:h-[60px]    bg-[#E37C35] text-white font-medium rounded-full hover:bg-gray-100 hover:text-[#E37C35] transition">
                 <button >
                   ! اعرف اكثر
                 </button>
@@ -81,7 +81,7 @@ export default function HomePage() {
         {/* About Section */}
         <section className="my-12 mx-4 md:mx-10 lg:mx-25 bg-white">
           <div className="mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4"> تعرف علينا</h2>
+            <h2 className="text-xl sm:text-2xl md:text-2xl xl:text-[32px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4"> تعرف علينا</h2>
             <p className="text-center text-sm  md:text-[18px]  2xl:text-[22px] font-[400] text-[#626262] mb-8 px-4">
               تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء” منذ أکثر من خمسة عشر عامًا، ومنذ ذلك الوقت نسعی لإنشاء العدید من المشاریع ذات الجودة والکفاءة العالیة من خلال فریق هندسي وفني وإداري متکامل مع مراعاة تطبیق معاییر الجودة والصحة والسلامة المهنیة طوال فترة المشروع, ودائمًا تسعی الشرکة لتقدیم مشاریع إنشائیة متمیزة لعملائها.            </p>
             <div className="flex justify-center">
@@ -118,7 +118,7 @@ export default function HomePage() {
 
         </section>
 
-        {/* Projects Section */}
+        {/* استكشف مناطقنا */}
         <section className=" mx-4 sm:mx-8 md:mx-10 lg:mx-25 bg-white">
 
           <div className="flex flex-col sm:flex-row-reverse w-full justify-end items-center py-4 bg-white">
@@ -132,15 +132,15 @@ export default function HomePage() {
             <div className="flex flex-row-reverse gap-3 ">
               <button
                 onClick={() => swiperRef.current?.slideNext()}
-                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
+                className="w-8 h-8 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
               >
-                <FiArrowRight className="text-[12px]  lg:text-[20px] 2xl:text-[28px]" />
+                <FiArrowRight className="text-[14px]  lg:text-[20px] 2xl:text-[28px]" />
               </button>
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
-                className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
+                className="w-8 h-8  xl:w-10 xl:h-10 2xl:w-12 2xl:h-12  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]"
               >
-                <FiArrowLeft className="text-[12px]   lg:text-[20px] 2xl:text-[28px]" />
+                <FiArrowLeft className="text-[14px]   lg:text-[20px] 2xl:text-[28px]" />
               </button>
             </div>
 
@@ -152,6 +152,7 @@ export default function HomePage() {
           {/* slider */}
           <ReelsSlider />
         </section>
+
         {/* New Projects Section */}
         <section className="my-12 mx-4 sm:mx-8 md:mx-10 lg:mx-25 bg-white">
           <div className="flex flex-col md:flex-row-reverse items-center justify-between md:items-baseline mb-8 ">
@@ -168,6 +169,8 @@ export default function HomePage() {
         </section>
         <CustomerOpinions />
         {/* Customer Opinions Section */}
+
+
         { /* job Section */}
         <section className="w-full my-8  ">
           <div
@@ -175,10 +178,10 @@ export default function HomePage() {
             style={{ backgroundImage: "url('/jobSectionBg.svg')" }}
           >
             <div className="box-job flex flex-col w-[100%] md:w-[50%] h-[100%] text-end justify-start md:justify-center self-end gap-4 px-4 py-2 2xl:px-15 2xl:gap-6  ">
-              <h2 className="text-[12px] sm:text-xl md:text-2xl text-white font-bold ">
+              <h2 className="text-[12px] sm:text-[18px] md:text-2xl text-white font-bold ">
                 أنضم إلينا كجزء من الفريق.. لتصبح جزء من معمار للتطوير العقاري
               </h2>
-              <button className="rounded-full bg-white px-2 py-4 w-[40%] sm:w-1/3 md:w-1/2 text-[#383191] text-[8px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[25px] self-end hover:text-white hover:bg-[#383191] transition-all duration-300">! قدم طلب الالتحاق الآن  </button>
+              <button className="rounded-full bg-white px-2 py-4 w-[40%] sm:w-1/3 md:w-1/2 text-[#383191] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[25px] self-end hover:text-white hover:bg-[#383191] transition-all duration-300">! قدم طلب الالتحاق الآن  </button>
             </div>
             <Image
               src="/employees.svg"
@@ -191,14 +194,19 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* قابل وكلائنا */}
         <section className="my-12 mx-4 md:mx-10 lg:mx-25 md:my-25">
           <div className="flex flex-col justify-center gap-2">
             <div className="flex flex-col items-center md:flex-row-reverse md:items-baseline justify-between mb-8 ">
               <div className='flex flex-col items-center md:items-end justify-center  bg-white rounded-lg'>
-                <h2 className='text-xl sm:text-2xl md:text-2xl  xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>قابل وكلائنا</h2>
-                <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[20px] 2xl:text-[25px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
+                <h2 className='text-xl sm:text-2xl md:text-2xl  xl:text-[30px] 2xl:text-[36px] font-600 text-[#333333] mb-4'>قابل وكلائنا</h2>
+                <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[16px] lg:text-[18px] 2xl:text-[22px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
               </div>
-              <button className=" rounded-4xl px-7 py-3 text-[12px] w-40   xl:py-4    md:text-[12px] xl:text-[16px] xl:w-50 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300"> قابل وكلاء اكثر</button>
+              <Link href="/meetOurAgents">
+                <button className="rounded-4xl px-7 py-3 text-[12px] w-40 xl:py-4 md:text-[12px] xl:text-[16px] xl:w-50 2xl:text-[20px] border-[#E37C35] border-2 text-[#E37C35] transition-all hover:text-white hover:bg-[#E37C35] duration-300">
+                  قابل وكلاء اكثر
+                </button>
+              </Link>
             </div>
             <Agents agents={agents} unitsPerSlide={3} />
 
@@ -208,7 +216,7 @@ export default function HomePage() {
           <div className='flex flex-col  items-baseline justify-between   '>
             <div className='flex flex-col w-full items-center md:items-end text-start  bg-white rounded-lg '>
               <h2 className=' text-xl sm:text-2xl md:text-2xl xl:text-[30px] 2xl:text-[36px] md:font-[600] text-[#333333] mb-4'>  أخبار و فعليات</h2>
-              <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[20px] 2xl:text-[25px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
+              <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-[18px]  2xl:text-[22px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
 
             </div>
             <div className='w-full  flex justify-center md:justify-end mb-4'>

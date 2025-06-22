@@ -9,9 +9,10 @@ import Navbar from "@/components/NavBar";
 import NewsEvents from "@/components/NewsEvents";
 import Footer from "@/components/Footer";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ReelsSlider from "@/components/ReelsSlider";
 // import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import SwiperCore from "swiper";
-import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
@@ -20,6 +21,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '../globals.css';
 import { news } from "@/data/news";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 
 // import required modules
@@ -72,7 +74,7 @@ export default function HomePage() {
                     <div className="" style={{ backgroundImage: 'url("/m3marInvestmentBg.png")' }}></div>
                     <div className="absolute inset-0 flex items-center justify-center z-20">
                         <div className="text-center text-white px-4">
-                            <h1 className="text-xl md:text-4xl font-bold mb-4 drop-shadow-lg">
+                            <h1 className="text-xl md:text-4xl lg:text-[40px] font-bold mb-4 drop-shadow-lg">
                                 معمار للاستثمار</h1>
                             <p className="text-lg md:text-xl drop-shadow-sm ">
                                 تعمل شرکة معمار للاستثمار العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء             </p>
@@ -81,15 +83,20 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-
+                <div className='flex flex-row-reverse  justify-start items-start gap-2  mx-4 md:mx-8 lg:mx-25 mt-5 mb-4'>
+                    <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> مشاريعنا</p>
+                    <MdOutlineKeyboardArrowLeft className='text-[18px] text-[#333333] self-center ' />
+                    <p className='text-[12px] sm:text-[14px] md:text-[16px] text-[#333333] font-semibold'> الوكلاء</p>
+                </div>
 
                 {/* Projects Section */}
-                <section className=" px-4 md:px-8 bg-white">
+                <section className=" mx-4 md:mx-8 lg:mx-25 bg-white">
+
 
                     <div className="flex flex-col sm:flex-row-reverse w-full justify-end items-center py-4 bg-white">
-                        <div className="flex flex-col items-center text-center w-full ">
-                            <h2 className="mx-auto text-xl sm:text-2xl md:text-3xl"> استكشف مشاريع معمار للاستثمار</h2>
-                            <p className="text-center text-sm md:text-lg font-light text-gray-700 mb-8 px-4">
+                        <div className="flex flex-col items-center text-center gap-2 w-full ">
+                            <h2 className="mx-auto text-xl sm:text-2xl md:text-3xl lg:text-[32px] text-[#333333] font-600"> استكشف مشاريع معمار للاستثمار</h2>
+                            <p className="text-center text-sm md:text-lg font-light text-[#4C4C4C] mb-8 px-4">
                                 تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء
                             </p>
                         </div>
@@ -102,161 +109,33 @@ export default function HomePage() {
 
 
                     {/* slider */}
-                    <Swiper
-                        slidesPerView={4}
-                        spaceBetween={5}
-                        pagination={{ clickable: true }}
-                        breakpoints={{
-                            220: { slidesPerView: 3, spaceBetween: 10 },
-                            420: { slidesPerView: 4, spaceBetween: 15 },
-                            640: { slidesPerView: 5, spaceBetween: 20 },
-                            768: { slidesPerView: 5, spaceBetween: 20 },
-                            1024: { slidesPerView: 5, spaceBetween: 20 },
-                        }}
-                        onBeforeInit={(swiper) => {
-                            swiperRef.current = swiper;
-                        }}
-
-                        className="mySwiper px-18"
-                    >
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                                <Image src="/elfayoum.png" alt="الفيوم" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                                <Image src="/newCairo.png" alt="القاهرة الجديدة" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                                <Image src="/elsadat.png" alt="السادات" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-1 sm:right-1  z-10"> +22 مشروع</div>
-                                <Image src="/elfayoum2.png" alt="الفيوم الجديدة" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                                <Image src="/newSohag.png" alt="سوهاج الجديدة" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative img-cont w-full h-32 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-2 sm:right-2 z-10"> +22 مشروع</div>
-                                <Image src="/elsadat.png" alt="السادات" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6 md:w-8 h-4 md:h-8 flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <div className="relative w-full h-40 sm:h-48 md:h-48 lg:h-74 rounded-lg overflow-hidden">
-                                <div className="absolute rounded-4xl text-[8px] p-1 right-1.5 md:text-[14px] bg-white  top-1 sm:right-1 z-10"> +22 مشروع</div>
-                                <Image src="/newCairo.png" alt="القاهرة الجديدة" fill className="object-cover" />
-                            </div>
-                            <div className="absolute z-10 bottom-0 text-white flex flex-row-reverse justify-between w-full p-1 ">
-                                <div className="flex flex-col gap-1">
-                                    <p className="text-[6px] md:text-[12px]">سوهاج الجديدة</p>
-                                    <p className="text-[4px] md:text-[10px]">12 نوفمبر 2024</p>
-                                </div>
-                                <button className="w-4 sm:w-6 sm:h-6  h-4 md:h-8 md:w-8  flex items-center justify-center rounded-full bg-[#E37C35] text-white hover:bg-white hover:text-[#E37C35]">
-                                    <FaLongArrowAltRight className="text-[8px] sm:text-[10px]" />
-                                </button>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                    <ReelsSlider />
                 </section>
 
                 {/* about section */}
-                <section className=" px-4 md:px-8 bg-white mt-8">
+                <section className=" mx-4 md:mx-8 lg:mx-25 bg-white mt-8">
                     <div className="flex flex-col gap-4 justify-center">
                         <div className="flex flex-col gap-4 justify-start self-end">
-                            <h1 className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-end">
+                            <h1 className="text-[20px] sm:text-[24px] md:text-[28px] xl:text-[32px] text-[#333333] font-600 text-end ">
                                 نبذه عن معمار للاستثمار
                             </h1>
-                            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold text-[#333333] text-end">
+                            <p className="text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[20px]  font-400 text-[#626262] text-end">
                                 تبدأ عملية إنشاء مشروع سكني بتخطيط دقيق يتضمن دراسة شاملة للموقع والتصميم المعماري. بعد ذلك، يتم تجهيز الأرض للبناء من خلال إزالة العوائق وتحديد الأساسات بشكل دقيق. تلي هذه المرحلة عملية البناء الفعلية، التي تشمل إنشاء الهيكل الخارجي وتوزيع المساحات الداخلية بشكل متوازن. بعد الانتهاء من الهيكل، تأتي مرحلة التشطيبات النهائية، حيث يتم تركيب النوافذ والأبواب والديكورات بعناية. أخيراً، يتم تسليم المشروع بعد التأكد من مطابقته للمواصفات والمعايير المطلوبة، مما يضمن جودة العمل ورضا العملاء.
                             </p>
 
                         </div>
                         <div className="flex flex-row-reverse gap-2 justify-center w-full">
-                            <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2  md:py-6 w-full rounded-3xl border border-[#333333] text-center `}>
-                                <p className="font-semibold md:font-bold">+150</p>
-                                <p className="font-light">مشروع سكني </p>
+                            <div className={`flex flex-col justify-center items-center gap-1 p-2 md:gap-2  md:py-6 xl:py-8 2xl:py-12 w-full rounded-3xl border border-[#333333] text-center `}>
+                                <p className="text-[18px] xl:text-[32px] md:font-bold">+150</p>
+                                <p className="text-[12px] xl:text-lg font-400">مشروع سكني </p>
                             </div>
                             <div className="flex flex-col justify-center items-center gap-1 md:gap-2 w-full md:py-6  p-2 rounded-3xl border-[1px] border-[#333333]  text-center bg-[#333333] text-white">
-                                <p className=" font-semibold md:font-bold">+40</p>
-                                <p className="font-light">مشروع تجاري</p>
+                                <p className=" text-[18px] xl:text-[32px] md:font-bold">+40</p>
+                                <p className="text-[12px] xl:text-lg font-400">مشروع تجاري</p>
                             </div>
                             <div className={`flex flex-col justify-center items-center gap-1 p-2 w-full md:py-6   rounded-3xl border border-[#333333] text-center `}>
-                                <p className="font-semibold md:font-bold">+30</p>
-                                <p className="font-light"> مشروع طبي</p>
+                                <p className="text-[18px] xl:text-[32px] md:font-bold">+30</p>
+                                <p className=" text-[12px] xl:text-lg font-400"> مشروع طبي</p>
                             </div>
                         </div>
                     </div>
@@ -265,11 +144,11 @@ export default function HomePage() {
 
 
                 {/* m3mar investment vidioes */}
-                <section>
-                    <div className='flex flex-col items-center justify-center w-full h-full  px-4 sm:px-22  py-8 '>
+                <section className="mx-4 md:mx-8 lg:mx-25">
+                    <div className='flex flex-col items-center justify-center w-full h-full   py-8 '>
                         <div className='flex flex-col justify-center sm:flex-row-reverse sm:justify-between items-center w-full mb-8'>
                             <div className='flex-col gap-1'>
-                                <h2 className='text-md sm:text-xl font-bold text-right'>فديوهات عن معمار للاستثمار</h2>
+                                <h2 className='text-md sm:text-xl md:text-[28px] xl:text-[32px] text-[#333333] font-600 text-right'>فديوهات عن معمار للاستثمار</h2>
 
                             </div>
                             <div className="flex flex-row-reverse gap-3 mt-4 self-center md:self-end bg-white ">
@@ -338,9 +217,9 @@ export default function HomePage() {
                     </div>
                 </section>
                 { /* gallery */}
-                <section className="px-4 md:px-8 bg-white mt-8">
+                <section className="mx-4 md:mx-8 lg:mx-25 bg-white mt-8">
                     <div className="flex flex-col gap-4">
-                        <h1 className="text-[18px] sm:text-[20px] md:text-[22px] text-end font-bold ">معرض صور معمار للاستثمار</h1>
+                        <h1 className="text-[18px] sm:text-[20px] md:text-[28px] xl:text-[32px] text-[#333333] text-end font-600 ">معرض صور معمار للاستثمار</h1>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2  sm:h-[600px]">
 
                             <div className="flex flex-row gap-1 sm:flex-col sm:gap-4 sm:h-full">
@@ -389,16 +268,16 @@ export default function HomePage() {
                 </section>
 
 
-                <section className="py-12 px-4 md:px-8 bg-white">
+                <section className="py-12 mx-4 md:mx-8 lg:mx-25 bg-white">
                     <div className='flex flex-col  items-baseline justify-between   '>
                         <div className='flex flex-col w-full items-end text-start  bg-white rounded-lg '>
-                            <h2 className=' text-lg sm:text-2xl font-bold mb-4'>  أخبار و فعليات</h2>
-                            <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
+                            <h2 className=' text-lg sm:text-2xl md:text-[28px] xl:text-32px font-600 mb-4'>  أخبار و فعليات</h2>
+                            <p className='text-gray-600 mb-6 text-end text-[12px] sm:text-md md:text-[18px] 2xl:text-[22px]'>تعمل شرکة معمار للتطویر العقاري وإدارة المشروعات ﻋﻠﯽ تقدیم أفضل خدمات المقاولات التشیید والبناء</p>
 
                         </div>
                         <div className='w-full  flex justify-end mb-4'>
                             <Link href="/news" passHref>
-                                <button className='px-4 py-3 bg-white border-[#E37C35] border-[1px] text-[#E37C35] w-full text-[9px] sm:text-[12px] md:text-[14px] rounded-2xl hover:bg-[#E37C35] hover:text-white transition duration-200'>
+                                <button className='px-4 py-3 bg-white border-[#E37C35] border-[1px] text-[#E37C35] w-full text-[9px] sm:text-[12px] md:text-[14px] xl:text-[18px] rounded-4xl hover:bg-[#E37C35] hover:text-white transition duration-200'>
                                     إطلع علي الاخبار
                                 </button>
                             </Link>
